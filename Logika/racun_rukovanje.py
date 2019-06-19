@@ -1,6 +1,7 @@
 from Logika.entiteti_rukovanje import EntitetiRukovanje
 from Entiteti.racun import Racun
 
+
 class Racun_rukovanje(EntitetiRukovanje):
     def __init__(self, putanja):
         super().__init__(putanja)
@@ -10,8 +11,7 @@ class Racun_rukovanje(EntitetiRukovanje):
             podaci = []
             for linija in file.readlines():
                 podaci.append(self.napravi_entitet(linija))
-            return podaci  
-
+            return podaci
 
     def napravi_entitet(self, linija):
         polje = linija.strip().split(";")
@@ -37,14 +37,13 @@ class Racun_rukovanje(EntitetiRukovanje):
                 file.write(str(entitet))
         return pronasao
 
-
     def pretraga_po_oznaci(self, lst, rijec):
         pretrazeno = []
         for i in lst:
             if i.oznaka.lower().find(rijec.lower()) != -1:
                 pretrazeno.append(i)
         return pretrazeno
-    
+
     def pretraga_po_prodavcu(self, lst, rijec):
         pretrazeno = []
         for i in lst:
@@ -102,5 +101,5 @@ class Racun_rukovanje(EntitetiRukovanje):
             if i.racun == racun:
                 for j in lista_artikala:
                     if i.artikal == j.oznaka:
-                        stavke_i_artikli.append({'stavka' : i, 'artikal' : j})
+                        stavke_i_artikli.append({'stavka': i, 'artikal': j})
         return stavke_i_artikli

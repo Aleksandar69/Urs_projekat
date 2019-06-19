@@ -8,7 +8,7 @@ from Logika.sekcija_rukovanje import Sekcija_rukovanje
 from Entiteti.stavka import Stavka
 from Logika.stavka_rukovanje import Stavka_rukovanje
 from Entiteti.racun import Racun
-from Logika.racun_rukvanje import Racun_rukovanje
+from Logika.racun_rukovanje import Racun_rukovanje
 
 # a = Artikal_rukovanje("artikli.txt")
 # artikal1 = Artikal("1", "test", "test", 23, "23.2.2019", "polica1")
@@ -55,7 +55,6 @@ from Logika.racun_rukvanje import Racun_rukovanje
 #     print(i)
 
 #     opt_sortiranje = int(input("Izaberite jednu od opcija za sortiranje: "))
-
 
 
 # a = Artikal_rukovanje("artikli.txt")
@@ -144,6 +143,6 @@ def citanje_svih(self):
         for linija in file.readlines():
             podaci.append(self.napravi_entitet(linija))
         return podaci
-            
-        
+
+
 help(citanje_svih)
