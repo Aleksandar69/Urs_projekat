@@ -19,6 +19,8 @@ class PolicaView:
                 self.prikaz_polica()
             elif "2" == option:
                 self.dodavanje_polica()
+            elif "3" == option:
+                self.menjanje_polica()
 
         return 0
 
@@ -51,3 +53,24 @@ class PolicaView:
         polica = Polica(oznaka, red, kolona, pozicija,
                         duzina, sirina, visina, sekcija)
         self.polica_handler.upis_jednog(polica)
+
+    def menjanje_polica(self):
+        oznaka = input(
+            "Unesite oznaku police koji zelite da zamjenite: ")
+        oznaka = str(oznaka)
+        red = input("Unesite red nove police: ")
+        red = int(red)
+        kolona = input("Unesite kolonu nove police: ")
+        kolona = int(kolona)
+        pozicija = input("Unesite poziciju nove police: ")
+        pozicija = str(pozicija)
+        duzina = input("Unesite duzinu nove police: ")
+        duzina = float(duzina)
+        sirina = input("Unesite sirinu nove police: ")
+        sirina = float(sirina)
+        visina = input("Unesite visinu nove police: ")
+        visina = float(visina)
+        sekcija = input("Unesite sekciju nove police: ")
+        polica = Polica(oznaka, red, kolona, pozicija,
+                        duzina, sirina, visina, sekcija)
+        self.polica_handler.izmjena_jednog(polica)
