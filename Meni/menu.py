@@ -9,5 +9,6 @@ class Menu:
         return option
 
     def print_menu_options(self):
+        print()
         for key, value in self.options.items():
             print(f"{key} -> {value}")
