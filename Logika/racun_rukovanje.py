@@ -86,7 +86,7 @@ class Racun_rukovanje(EntitetiRukovanje):
             for j in range(i+1, len(lst)):
                 if smjer == "+":
                     if lst[najmanji].datum > lst[j].datum:
-                        najmanju = j
+                        najmanji = j
                 elif smjer == "-":
                     if lst[najmanji].datum < lst[j].datum:
                         najmanji = j
