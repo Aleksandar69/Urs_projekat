@@ -7,7 +7,7 @@ from Logika.polica_rukovanje import Polica_rukovanje
 from Entiteti.stavka import Stavka
 from Logika.stavka_rukovanje import Stavka_rukovanje
 from Entiteti.racun import Racun
-from Logika.racun_rukvanje import Racun_rukovanje
+from Logika.racun_rukovanje import Racun_rukovanje
 
 if __name__ == "__main__":
     # a = Artikal_rukovanje("artikli.txt")
@@ -25,7 +25,6 @@ if __name__ == "__main__":
     # polica = Polica("1", "1", "1", "1", "2.3", "10.12", "4")
 
     # p.upis_jednog(polica)
-
 
     # s1 = Stavka_rukovanje("stavka.txt")
     # stavka = Stavka("1", 5, 20.1, "Persun", "a")
@@ -68,11 +67,11 @@ if __name__ == "__main__":
 
     # a = Artikal_rukovanje("artikli.txt")
     # lista1 = a.citanje_svih()
-        
+
     # pretrazeno5 = a.sortiranje_po_cijeni(lista1, "+")
     # for i in pretrazeno5:
     #     print(str(i))
-    
+
     # pretrazeno6 = a.sortiranje_po_roku_trajanja(lista1, "-")
     # for i in pretrazeno6:
     #     print(str(i))
@@ -104,10 +103,8 @@ if __name__ == "__main__":
     # oznaka_sekcije = input("faberite ID sekcije: ")
     # pretrazeno = b.izlistaj_police(oznaka_sekcije, lista)
 
-
     # for i in pretrazeno:
     #     print(str(i))
-
 
     # c = Polica_rukovanje("polica.txt")
     # lista = c.citanje_svih()
